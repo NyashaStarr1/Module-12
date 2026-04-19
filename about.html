@@ -12,8 +12,6 @@
 
 <body>
 
-<div class="grain-overlay"></div>
-
 <div class="page">
 
 <!-- ================= HEADER ================= -->
@@ -41,86 +39,71 @@
   </div>
 </header>
 
-<!-- ================= HERO ================= -->
-<section class="about-hero">
-  <div class="about-hero-inner">
-    <h1>About</h1>
-    <p>
-      Investigative storytelling dedicated to uncovering truth, shifting perspective,
-      and amplifying voices too often left unheard.
-    </p>
-  </div>
-</section>
-
 
 <!-- ================= MISSION ================= -->
-<section class="mission-section">
+<section class="about-section">
 
-  <div class="mission-inner">
+  <div class="glass-panel parchment">
 
-    <h2>Our Mission</h2>
+    <h2 class="section-title">Our Mission</h2>
 
-    <p class="quote">
-      “Justice for the unheard. Light for the unseen.”
+    <p class="mission-quote">
+      “Every case represents a person. Every person deserves justice.”
     </p>
 
     <p>
-      <strong>The Noir Cases</strong> is a global true crime podcast committed to
-      shifting how stories are told, and whose stories are heard.
+      The Noir Cases is a global true crime podcast spotlighting marginalized voices. Hosted by Nya Starr, each episode explores cases affecting BIPOC communities—blending research, cultural context, and storytelling while bridging the gap between the criminal justice system and the communities it serves.
     </p>
 
     <p>
-      While mainstream media often focuses on sensationalized cases or those involving
-      a narrow demographic, this platform exists to broaden that lens. Many cases
-      affecting BIPOC communities are underreported, misrepresented, or ignored
-      entirely, despite clear data showing disparities in coverage, investigation,
-      and outcomes.
+      The mission goes beyond telling crime stories. It is about understanding the systems behind them—examining bias, disparities, and the structures that shape outcomes. While mainstream coverage often centers a narrow range of cases, many stories remain overlooked, underreported, or misrepresented.
     </p>
 
     <p>
-      This podcast goes beyond retelling crime. It examines the systems behind it:
-      policing, media, bias, accountability, and the societal structures that shape
-      justice.
+      Through data, lived experience, and critical analysis, The Noir Cases creates space for those voices. Not just to inform—but to shift perspective, challenge narratives, and expand what justice looks like.
     </p>
 
-    <p>
-      Through research, storytelling, and cultural context, <em>The Noir Cases</em>
-      provides perspective, connecting individual cases to larger patterns and giving
-      voice to stories that deserve visibility, understanding, and truth.
+    <p class="tagline">
+      Justice for the unheard. Light for the unseen.
     </p>
 
   </div>
 
 </section>
-	<!-- ================= HOST ================= -->
-<section class="host-section">
 
-  <div class="host-inner">
 
-    <!-- IMAGE -->
-    <div class="host-image">
-      <img src="images/host.png" alt="Nya Starr podcast host illustration">
-    </div>
+<!-- ================= HOST ================= -->
+<section class="about-section">
 
-    <!-- TEXT -->
-    <div class="host-text">
+  <div class="glass-panel parchment">
 
-      <h2>Nya Starr</h2>
-     <span class="host-role">Creator &amp; Host — The Noir Cases</span>
+    <div class="host-grid">
 
-      <p>
-        Nya Starr is the creator and host of <em>The Noir Cases</em>, where she examines
-        true crime through a systemic, research-driven lens. With a background in
-        Criminal Justice and sociology, her work blends academic insight with lived
-        experience to challenge how crime stories are told, and who they center.
-      </p>
+      <!-- IMAGE -->
+      <div class="host-image">
+        <img src="images/host.png" alt="Nya Starr podcast host illustration">
+      </div>
 
-      <p>
-        An Air Force veteran and longtime advocate, her work has always been rooted in
-        confronting injustice and questioning institutional narratives. Through her
-        platform, she amplifies marginalized voices and pushes beyond surface-level
-        storytelling.
-      </p>
+      <!-- TEXT -->
+      <div class="host-content">
+
+        <h3 class="section-title">Your Host</h3>
+
+        <h2 class="host-name">Nya Starr</h2>
+
+       <p class="host-role">
+  CREATOR &amp; HOST — THE NOIR CASES
+</p>
+
+        <p>
+          Nya Starr is the creator and host of The Noir Cases, where she examines true crime through a systemic and research-driven lens. With a master’s degree in Criminal Justice and a foundation in sociology, she brings both academic depth and real-world perspective to every case.
+        </p>
+
+        <p>
+          An Air Force veteran and longtime advocate, her work challenges dominant narratives, amplifies marginalized voices, and pushes beyond surface-level storytelling to uncover the deeper forces shaping justice.
+        </p>
+
+      </div>
 
     </div>
 
@@ -130,11 +113,11 @@
 
 
 <!-- ================= CONTACT ================= -->
-<section class="contact-section">
+<section class="about-section">
 
-  <div class="contact-inner">
+  <div class="glass-panel">
 
-    <h2>Get in Touch</h2>
+    <h2 class="section-title">Get in Touch</h2>
 
     <form class="contact-form">
 
@@ -145,7 +128,19 @@
 
       <input type="text" placeholder="Subject">
 
-      <textarea placeholder="Message"></textarea>
+      <div class="radio-group">
+        <label><input type="radio" name="reason"> General Inquiry</label>
+        <label><input type="radio" name="reason"> Tip</label>
+        <label><input type="radio" name="reason"> Media Request</label>
+        <label><input type="radio" name="reason"> Feedback</label>
+      </div>
+
+      <textarea rows="6" placeholder="Message"></textarea>
+
+      <label class="consent">
+        <input type="checkbox" required>
+        I consent to The Noir Cases storing and processing my information.
+      </label>
 
       <button class="button primary">Submit →</button>
 
@@ -154,6 +149,7 @@
   </div>
 
 </section>
+
 
 <!-- ================= FOOTER ================= -->
 <footer>
