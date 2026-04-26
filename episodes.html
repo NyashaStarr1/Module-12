@@ -162,284 +162,342 @@
   </section>
 
   <!-- EPISODE ARCHIVE — live RSS fetch -->
-  <section class="noir-files" id="noir-files">
+ <section class="noir-files" id="noir-files">
 
-    <div class="noir-files-header">
-      <h3>Noir Files</h3>
-      <a class="text-link view-cases" href="https://thenoircases.buzzsprout.com/2208391/episodes" target="_blank" rel="noopener">All Episodes on Buzzsprout &rarr;</a>
-    </div>
+  <div class="noir-files-header">
+    <h3>Noir Files</h3>
+    <a class="text-link view-cases" href="https://thenoircases.buzzsprout.com/2208391/episodes" target="_blank" rel="noopener">
+      All Episodes on Buzzsprout →
+    </a>
+  </div>
 
-    <!-- SEASON TABS -->
-    <div class="noir-season-tabs">
-      <button class="noir-season-btn active" data-season="all">All Seasons</button>
-      <button class="noir-season-btn" data-season="1">Season 1</button>
-      <button class="noir-season-btn" data-season="2">Season 2</button>
-      <button class="noir-season-btn" data-season="3">Season 3</button>
-    </div>
 
-    <!-- CATEGORY FILTERS -->
-    <div class="noir-tab-filters">
-      <button class="noir-tab-btn active" data-filter="all">All</button>
-      <button class="noir-tab-btn" data-filter="solved">Solved</button>
-      <button class="noir-tab-btn" data-filter="unsolved">Unsolved</button>
-      <button class="noir-tab-btn" data-filter="humanrights">Human Rights</button>
-      <button class="noir-tab-btn" data-filter="historical">Historical</button>
-      <button class="noir-tab-btn" data-filter="missingpersons">Missing Persons</button>
-      <button class="noir-tab-btn" data-filter="policemisconduct">Police Misconduct</button>
-    </div>
+  <!-- SEASON TABS -->
+<div class="noir-season-tabs">
+  <button class="noir-season-btn active" data-season="all">All Seasons</button>
+  <button class="noir-season-btn" data-season="1">Season 1</button>
+  <button class="noir-season-btn" data-season="2">Season 2</button>
+  <button class="noir-season-btn" data-season="3">Season 3</button>
+  <button class="noir-season-btn" data-season="update">Updates</button>
+</div>
+   <!-- CATEGORY FILTERS -->
+  <div class="noir-tab-filters">
+    <button class="noir-tab-btn active" data-filter="all">All</button>
+    <button class="noir-tab-btn" data-filter="solved">Solved</button>
+    <button class="noir-tab-btn" data-filter="unsolved">Unsolved</button>
+    <button class="noir-tab-btn" data-filter="humanrights">Human Rights</button>
+    <button class="noir-tab-btn" data-filter="historical">Historical</button>
+    <button class="noir-tab-btn" data-filter="missingchildren">Missing Children</button>
+    <button class="noir-tab-btn" data-filter="missingpersons">Missing Persons</button>
+    <button class="noir-tab-btn" data-filter="wrongfulconviction">Wrongful Conviction</button>
+    <button class="noir-tab-btn" data-filter="trafficking">Trafficking</button>
+    <button class="noir-tab-btn" data-filter="ipv">Intimate Partner Violence</button>
+    <button class="noir-tab-btn" data-filter="policemisconduct">Police Misconduct</button>
+  </div>
 
-    <!-- LOADING -->
-    <div id="rssLoading" class="rss-loading"><p>Loading episodes&hellip;</p></div>
+  <div class="noir-episode-grid" id="episodeGrid">
 
-    <!-- ERROR fallback -->
-    <div id="rssError" class="rss-error" style="display:none;">
-      <p>Episodes could not be loaded. <a href="https://thenoircases.buzzsprout.com/2208391/episodes" target="_blank" rel="noopener">View all on Buzzsprout &rarr;</a></p>
-    </div>
-
-    <!-- GRID — JS injects cards here -->
-    <div class="noir-episode-grid" id="episodeGrid" style="display:none;">
-      <!-- Season 3 coming soon — always static -->
-      <div class="ep-card ep-coming" data-season="3" data-category="unsolved">
-        <div class="ep-coming-inner">
-          <span class="ep-season-badge s3">S3 &middot; E1</span>
-          <p class="ep-coming-label">Coming Soon</p>
-        </div>
-        <div class="ep-card-info"><p>Midnight in La Cygne &mdash; Alonzo Brooks</p></div>
+    <!-- SEASON 3 COMING SOON -->
+    <div class="ep-card ep-coming" data-season="3" data-category="unsolved humanrights">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · E1</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>Midnight in La Cygne — Alonzo Brooks</p>
       </div>
     </div>
 
-    <p class="no-results" id="noResults" style="display:none;">No episodes match this filter.</p>
+    <div class="ep-card ep-coming" data-season="3" data-category="missingchildren trafficking humanrights">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · E2</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>Delhi’s Smuggled Childhood</p>
+      </div>
+    </div>
 
-  </section>
+    <div class="ep-card ep-coming" data-season="3" data-category="missingchildren humanrights">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · E3</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>Victoria Climbié: A Child Britain Failed</p>
+      </div>
+    </div>
 
-  <footer id="about">
-    <p>&copy; 2025 Nyasha Starr | 404 Starrow Productions. All rights reserved.</p>
-  </footer>
+    <div class="ep-card ep-coming" data-season="3" data-category="unsolved missingpersons humanrights">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · E4</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>Amber’s Last Call</p>
+      </div>
+    </div>
 
-</div><!-- end .page -->
+    <div class="ep-card ep-coming" data-season="3" data-category="humanrights">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · E5</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>Reserved Episode</p>
+      </div>
+    </div>
 
+    <div class="ep-card ep-coming" data-season="3" data-category="humanrights policemisconduct">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · E6</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>The Cell on Palm Island</p>
+      </div>
+    </div>
+
+    <div class="ep-card ep-coming" data-season="3" data-category="solved humanrights">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · E7</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>Crystal Griner</p>
+      </div>
+    </div>
+
+    <div class="ep-card ep-coming" data-season="3" data-category="historical humanrights">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · E8</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>Patrice Lumumba</p>
+      </div>
+    </div>
+
+    <div class="ep-card ep-coming" data-season="3" data-category="humanrights">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · E9</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>Reserved Episode</p>
+      </div>
+    </div>
+
+    <div class="ep-card ep-coming" data-season="3" data-category="policemisconduct humanrights">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · E10</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>Flatlined by Assumption</p>
+      </div>
+    </div>
+
+    <div class="ep-card ep-coming" data-season="3" data-category="wrongfulconviction humanrights historical">
+      <div class="ep-coming-inner">
+        <span class="ep-season-badge s3">S3 · Finale</span>
+        <p class="ep-coming-label">Coming Soon</p>
+      </div>
+      <div class="ep-card-info">
+        <p>The Dixmoor 5</p>
+      </div>
+    </div>
+
+    <!-- SEASON 2 -->
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/17296447-laughter-lipstick-and-lies-what-happened-to-marsha-p-johnson" target="_blank" rel="noopener" data-season="2" data-category="unsolved humanrights historical">
+      <img src="images/marsha.jpg" alt="Marsha P. Johnson episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s2">S2 · E7</span>
+        <p>Laughter, Lipstick, and Lies</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/17214469-the-north-epping-nightmare" target="_blank" rel="noopener" data-season="2" data-category="solved ipv">
+      <img src="images/epping.png" alt="North Epping Nightmare episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s2">S2 · E6</span>
+        <p>The North Epping Nightmare</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/17130888-jaliek-s-note" target="_blank" rel="noopener" data-season="2" data-category="unsolved missingpersons missingchildren">
+      <img src="images/Jaliek Rainwalker.png" alt="Jaliek Rainwalker episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s2">S2 · E5</span>
+        <p>Jaliek's Note</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/17030711-inaugural-dreams-chicago-s-sorrow" target="_blank" rel="noopener" data-season="2" data-category="solved humanrights missingchildren">
+      <img src="images/hadiya pendleton.jpg" alt="Hadiya Pendleton episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s2">S2 · E4</span>
+        <p>Inaugural Dreams, Chicago’s Sorrow</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/16927783-rugby-and-rage-the-fernando-baez-sosa-case" target="_blank" rel="noopener" data-season="2" data-category="solved humanrights">
+      <img src="images/fernando.jpg" alt="Fernando Baez Sosa episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s2">S2 · E3</span>
+        <p>Rugby and Rage</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/16831058-2-lives-stolen-2-babies-taken-savanna-lafontaine-greywind-and-araceli-camacho-gomez" target="_blank" rel="noopener" data-season="2" data-category="solved missingpersons missingchildren humanrights">
+      <img src="images/2 lives.jpg" alt="Savanna and Araceli episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s2">S2 · E2</span>
+        <p>2 Lives Stolen, 2 Babies Taken</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/16755852-noir-files-asha-degree-the-breakthrough" target="_blank" rel="noopener" data-season="update" data-category="unsolved missingpersons missingchildren">
+      <img src="images/asha.jpg" alt="Asha Degree update episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s2">Update</span>
+        <p>Noir Files: Asha Degree — The Breakthrough</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/16657126-when-power-fears-truth-fred-hampton" target="_blank" rel="noopener" data-season="2" data-category="historical humanrights policemisconduct">
+      <img src="images/fred hampton.jpg" alt="Fred Hampton episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s2">S2 · E1</span>
+        <p>When Power Fears Truth</p>
+      </div>
+    </a>
+
+    <!-- SEASON 1 -->
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/15425525-striding-in-stilettos-the-defiance-of-larry-king" target="_blank" rel="noopener" data-season="1" data-category="solved humanrights missingchildren">
+      <img src="images/larry king.jpg" alt="Larry King episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s1">S1 · E10</span>
+        <p>Striding in Stilettos</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/15314544-unwarranted-the-death-of-patrick-dorismond" target="_blank" rel="noopener" data-season="1" data-category="policemisconduct humanrights">
+      <img src="images/patrick.jpg" alt="Patrick Dorismond episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s1">S1 · E9</span>
+        <p>Unwarranted</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/15267182-the-long-night-searching-for-asha-degree" target="_blank" rel="noopener" data-season="1" data-category="unsolved missingpersons missingchildren">
+      <img src="images/asha.jpg" alt="Asha Degree episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s1">S1 · E8</span>
+        <p>The Long Night</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/15183282-warning-shot-the-marissa-alexander-story" target="_blank" rel="noopener" data-season="1" data-category="solved humanrights ipv">
+      <img src="images/marissa.jpg" alt="Marissa Alexander episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s1">S1 · E7</span>
+        <p>Warning Shot</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/15115403-guardian-of-the-amazon-the-paulo-paulino-guajajara-story" target="_blank" rel="noopener" data-season="1" data-category="solved humanrights historical">
+      <img src="images/paulo guajajara.jpeg" alt="Paulo Paulino Guajajara episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s1">S1 · E6</span>
+        <p>Guardian of the Amazon</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/15049126-dragged-to-death-the-story-of-mido-macia" target="_blank" rel="noopener" data-season="1" data-category="solved policemisconduct humanrights">
+      <img src="images/mido.jpg" alt="Mido Macia episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s1">S1 · E5</span>
+        <p>Dragged to Death</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/14970102-40-days-of-darkness-the-tragic-case-of-junko-furuta" target="_blank" rel="noopener" data-season="1" data-category="solved humanrights ipv">
+      <img src="images/junko.jpg" alt="Junko Furuta episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s1">S1 · E4</span>
+        <p>40 Days of Darkness</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/14881011-london-s-lost-son-remembering-stephen-lawrence" target="_blank" rel="noopener" data-season="1" data-category="solved historical humanrights">
+      <img src="images/stephen.jpg" alt="Stephen Lawrence episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s1">S1 · E3</span>
+        <p>London's Lost Son</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/14832252-a-honeymoon-nightmare-the-anni-dewani-case" target="_blank" rel="noopener" data-season="1" data-category="solved ipv humanrights">
+      <img src="images/dewani.jpg" alt="Anni Dewani episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s1">S1 · E2</span>
+        <p>A Honeymoon Nightmare</p>
+      </div>
+    </a>
+
+    <a class="ep-card" href="https://thenoircases.buzzsprout.com/2208391/episodes/14785113-silent-cry-the-tragic-story-of-elisa-izquierdo" target="_blank" rel="noopener" data-season="1" data-category="solved humanrights missingchildren">
+      <img src="images/elisa.jpg" alt="Elisa Izquierdo episode">
+      <div class="ep-card-info">
+        <span class="ep-season-badge s1">S1 · E1</span>
+        <p>Silent Cry</p>
+      </div>
+    </a>
+
+  </div>
+
+  <p class="no-results" id="noResults" style="display:none;">No episodes match this filter.</p>
+
+</section>
+
+<!-- FILTER SCRIPT -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <script>
-/* ============================================================
-   THE NOIR CASES — RSS-powered Episode Archive
-   Fetches https://feeds.buzzsprout.com/2208391.rss via
-   rss2json API, parses items, builds episode cards.
-   Season + Category dual filter with no page reload.
-============================================================ */
-
-var RSS_URL = "https://feeds.buzzsprout.com/2208391.rss";
-var PROXY   = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(RSS_URL);
-
-/* Maps keyword tags to filter categories */
-var CAT_MAP = {
-  solved:          ["solved","conviction","convicted","acquitted","sentenced","verdict","justice served","trial"],
-  unsolved:        ["unsolved","cold case","missing","disappeared","disappearance","mystery","no arrest","haunting"],
-  humanrights:     ["human rights","indigenous","lgbt","lgbtq","trans","immigrant","civil rights","equality","social justice","environmental","pride","women","fetal","mmiw"],
-  historical:      ["history","historical","1969","civil rights","black panther","black history","movement","legacy"],
-  missingpersons:  ["missing person","missing child","missing children","child disappear","abduction","abducted","runaway","search"],
-  policemisconduct:["police","nypd","fbi","misconduct","brutality","profiling","racial profiling","accountability","cover-up","raid","sting","xenophobia"]
-};
-
-function getCategories(keywords, title) {
-  var text = ((keywords || "") + " " + (title || "")).toLowerCase();
-  var cats = [];
-  for (var cat in CAT_MAP) {
-    var terms = CAT_MAP[cat];
-    for (var i = 0; i < terms.length; i++) {
-      if (text.indexOf(terms[i]) !== -1) { cats.push(cat); break; }
-    }
-  }
-  return cats.length ? cats.join(" ") : "humanrights";
-}
-
-function formatDuration(secs) {
-  var s = parseInt(secs, 10) || 0;
-  var m = Math.floor(s / 60);
-  var h = Math.floor(m / 60);
-  m = m % 60;
-  return h > 0 ? h + "h " + (m < 10 ? "0" : "") + m + "m" : m + " min";
-}
-
-function nsGet(item, tag) {
-  var els = item.getElementsByTagNameNS("http://www.itunes.com/dtds/podcast-1.0.dtd", tag);
-  return els.length ? els[0].textContent.trim() : "";
-}
-function nsAttr(item, tag, attr) {
-  var els = item.getElementsByTagNameNS("http://www.itunes.com/dtds/podcast-1.0.dtd", tag);
-  return els.length ? (els[0].getAttribute(attr) || "") : "";
-}
-
-function parseRSS(xmlStr) {
-  var xml   = (new DOMParser()).parseFromString(xmlStr, "text/xml");
-  var items = xml.querySelectorAll("item");
-  var eps   = [];
-  items.forEach(function(item) {
-    var title    = nsGet(item,"title") || (item.querySelector("title") || {textContent:""}).textContent.trim();
-    var image    = nsAttr(item,"image","href");
-    var season   = nsGet(item,"season");
-    var epNum    = nsGet(item,"episode");
-    var duration = nsGet(item,"duration");
-    var keywords = nsGet(item,"keywords");
-    var enc      = item.querySelector("enclosure");
-    var epLink   = enc ? enc.getAttribute("url") : "";
-    if (epLink) {
-      epLink = epLink
-        .replace("https://www.buzzsprout.com/2208391/episodes/",
-                 "https://thenoircases.buzzsprout.com/2208391/episodes/")
-        .replace(/\.mp3$/, "");
-    }
-    eps.push({
-      title:      title,
-      image:      image,
-      link:       epLink,
-      season:     season || "1",
-      epNum:      epNum,
-      duration:   duration,
-      categories: getCategories(keywords, title)
-    });
-  });
-  /* Sort newest season/ep first */
-  eps.sort(function(a, b) {
-    var sd = parseInt(b.season, 10) - parseInt(a.season, 10);
-    if (sd) return sd;
-    return (parseInt(b.epNum, 10) || 0) - (parseInt(a.epNum, 10) || 0);
-  });
-  return eps;
-}
-
-function buildCard(ep) {
-  var sNum     = ep.season;
-  var label    = "S" + sNum + (ep.epNum ? " &middot; E" + ep.epNum : "");
-  var dur      = ep.duration ? "<span class='ep-duration'>" + formatDuration(ep.duration) + "</span>" : "";
-  var badgeCls = "ep-season-badge s" + sNum;
-
-  var a = document.createElement("a");
-  a.className = "ep-card";
-  a.href      = ep.link;
-  a.target    = "_blank";
-  a.rel       = "noopener";
-  a.setAttribute("data-season",   sNum);
-  a.setAttribute("data-category", ep.categories);
-  a.innerHTML =
-    "<img src='" + ep.image + "' alt='" + ep.title.replace(/'/g, "&#39;") + "' " +
-      "onerror=\"this.style.background='#26436C';this.removeAttribute('src')\">" +
-    "<div class='ep-card-info'>" +
-      "<span class='" + badgeCls + "'>" + label + "</span>" +
-      dur +
-      "<p>" + ep.title + "</p>" +
-    "</div>";
-  return a;
-}
-
-function renderEpisodes(eps) {
-  var grid = document.getElementById("episodeGrid");
-  /* Remove any previously injected cards, keep static S3 coming-soon card */
-  Array.prototype.forEach.call(
-    grid.querySelectorAll(".ep-card:not(.ep-coming)"),
-    function(el) { el.parentNode.removeChild(el); }
-  );
-  eps.forEach(function(ep) { grid.appendChild(buildCard(ep)); });
-  document.getElementById("rssLoading").style.display = "none";
-  grid.style.display = "";
-  applyFilters();
-}
-
-/* Active filter state */
 var activeSeason = "all";
-var activeCat    = "all";
+var activeCat = "all";
 
 function applyFilters() {
   var cards = document.querySelectorAll("#episodeGrid .ep-card");
-  var any   = false;
-  cards.forEach(function(c) {
-    var s    = c.getAttribute("data-season") || "all";
-    var cats = (c.getAttribute("data-category") || "").split(" ");
-    var sOk  = activeSeason === "all" || s === activeSeason;
-    var cOk  = activeCat   === "all" || cats.indexOf(activeCat) !== -1;
-    c.style.display = (sOk && cOk) ? "" : "none";
-    if (sOk && cOk) any = true;
+  var any = false;
+
+  cards.forEach(function(card) {
+    var season = card.getAttribute("data-season");
+    var categories = (card.getAttribute("data-category") || "").split(" ");
+
+    var seasonMatch = activeSeason === "all" || season === activeSeason;
+    var categoryMatch = activeCat === "all" || categories.indexOf(activeCat) !== -1;
+
+    if (seasonMatch && categoryMatch) {
+      card.style.display = "";
+      any = true;
+    } else {
+      card.style.display = "none";
+    }
   });
-  document.getElementById("noResults").style.display = any ? "none" : "";
+
+  document.getElementById("noResults").style.display = any ? "none" : "block";
 }
 
-/* Fetch RSS — uses rss2json for CORS-safe JSON response */
-function loadRSS() {
-  fetch(PROXY)
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      if (!d.items || !d.items.length) {
-        throw new Error("No RSS items");
-      }
-var eps = d.items.map(function(item){
-
- 
-  var text = ((item.itunes_keywords || "") + " " + item.title).toLowerCase();
-
-  function mapCategories(text) {
-    let mapped = [];
-
-    if (text.includes("solved")) mapped.push("solved");
-    if (text.includes("unsolved")) mapped.push("unsolved");
-    if (text.includes("human rights")) mapped.push("humanrights");
-    if (text.includes("historical")) mapped.push("historical");
-    if (text.includes("missing")) mapped.push("missingpersons");
-    if (text.includes("police")) mapped.push("policemisconduct");
-
-    return mapped.join(" ") || "humanrights";
-  }
-
-  
-  var season = item.itunes_season || "";
-  
-  if (!season) {
-    var match = item.title.match(/S(\d+)/i) || item.title.match(/Season\s*(\d+)/i);
-    season = match ? match[1] : "1";
-  }
-
-  return {
-    title: item.title || "Untitled",
-    image: item.thumbnail || "",
-    link: item.link || "",
-    season: season,
-    epNum: item.itunes_episode || "",
-    duration: item.itunes_duration || "",
-    categories: mapCategories(text)
-  };
-});
-      renderEpisodes(eps);
-    })
-    .catch(function(err) {
-      console.warn("rss2json failed:", err, "— trying allorigins fallback");
-      /* Fallback: raw XML via allorigins */
-      fetch("https://api.allorigins.win/get?url=" + encodeURIComponent(RSS_URL))
-        .then(function(r) { return r.json(); })
-        .then(function(d) {
-          if (!d.contents) throw new Error("Empty allorigins response");
-          var eps = parseRSS(d.contents);
-          if (!eps.length) throw new Error("No episodes parsed");
-          renderEpisodes(eps);
-        })
-        .catch(function(err2) {
-          console.error("Both RSS methods failed:", err2);
-          document.getElementById("rssLoading").style.display = "none";
-          document.getElementById("rssError").style.display   = "";
-          document.getElementById("episodeGrid").style.display = "";
-        });
-    });
-}
-
-/* jQuery ready */
 $(function() {
-  loadRSS();
-
-  $(document).on("click", ".noir-season-btn", function() {
+  $(".noir-season-btn").on("click", function() {
     $(".noir-season-btn").removeClass("active");
     $(this).addClass("active");
     activeSeason = String($(this).data("season"));
     applyFilters();
   });
 
-  $(document).on("click", ".noir-tab-btn", function() {
+  $(".noir-tab-btn").on("click", function() {
     $(".noir-tab-btn").removeClass("active");
     $(this).addClass("active");
     activeCat = String($(this).data("filter"));
@@ -448,21 +506,43 @@ $(function() {
 
   $("#siteSearch").on("keydown", function(e) {
     if (e.key !== "Enter") return;
+
     e.preventDefault();
+
     var term = $.trim($(this).val().toLowerCase());
-    if (!term) { alert("Please enter a search term."); return; }
+
+    if (!term) {
+      alert("Please enter a search term.");
+      return;
+    }
+
     $(".search-highlight").removeClass("search-highlight");
+
     var found = false;
+
     $("section, .ep-card, .case-spotlight").each(function() {
       if ($(this).text().toLowerCase().indexOf(term) !== -1) {
         $(this).addClass("search-highlight");
-        if (!found) { this.scrollIntoView({ behavior: "smooth", block: "center" }); found = true; }
+
+        if (!found) {
+          this.scrollIntoView({ behavior: "smooth", block: "center" });
+          found = true;
+        }
       }
     });
-    if (!found) alert('No results found for "' + term + '".');
+
+    if (!found) {
+      alert('No results found for "' + term + '".');
+    }
   });
+
+  applyFilters();
 });
 </script>
+<footer id="about">
+    <p>&copy; 2025 Nyasha Starr | 404 Starrow Productions. All rights reserved.</p>
+  </footer>
 
+</div><!-- end .page -->
 </body>
 </html>
