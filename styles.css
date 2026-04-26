@@ -301,10 +301,29 @@ header nav {
 .featured-body { flex: 1; display: flex; flex-direction: column; min-width: 0; }
 .featured-body h4 { margin-top: 0; }
 .featured-btn { display: inline-block; margin-top: 16px; align-self: flex-start; padding: 12px 24px; }
-.audio-wrapper { margin: 14px 0 16px; }
-.audio-label { font-family: "Montserrat", sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--navy-mid); margin-bottom: 6px !important; }
-audio { width: 100%; display: block; accent-color: var(--crimson); }
+audio{
+width:100%;
+max-width:760px;
+display:block;
+margin-top:10px;
+border-radius:30px;
+accent-color: var(--crimson);
+filter: drop-shadow(0 4px 10px rgba(0,0,0,.10));
+}
 
+.audio-wrapper{
+margin:16px 0 20px;
+}
+
+.audio-label{
+font-family:"Montserrat",sans-serif;
+font-size:11px;
+font-weight:700;
+letter-spacing:.8px;
+text-transform:uppercase;
+color:var(--navy-mid);
+margin-bottom:8px;
+}
 /* ═══════════════════════════════════════════
    BUTTONS
 ═══════════════════════════════════════════ */
